@@ -7,7 +7,12 @@
 Om images uit te zetten in Google Chrome is vrij eenvoudig. Het pad binnen de instellingen dat je moet volgen om afbeeldingen uit te zetten is: `Settings` => `Privacy an dsecurity` => `Site settings` => `Images` => `Do not show any images`. Hier kun je ook nog aageven op welke specifieke websites je wel of geen afbeeldingen wil tonen.
 
 ### Veroorzaakte problemen
-Het niet laden van afbeeldingen kan voor problemen/verwarring zorgen. Zo kunnen afbeeldingen belangrijk zijn voor het ondersteunen wat er in de tekst verteld wordt. Ook kunnen afbeeldingen dienen als achtergrond, en zonder deze achtergrond kan text verdwijnen. Dit kan zelfs zo erg worden dat er helemaal geen content meer zichtbaar is op de pagina.
+Het niet laden van afbeeldingen kan voor problemen/verwarring zorgen. Zo kunnen afbeeldingen belangrijk zijn voor het ondersteunen wat er in de tekst verteld wordt. Ook kunnen afbeeldingen dienen als achtergrond, en zonder deze achtergrond kan text verdwijnen. Dit kan zelfs zo erg worden dat er helemaal geen content meer zichtbaar is op de pagina, en de gehele structuur daardoor weg valt.
+
+Samengevat dus:
+- `tekst kan onzichtbaar worden`
+- `content wordt niet met illustratie ondersteunt`
+- `structuur van de site kan onduidelijk zijn`
 
 ### Site voorbeelden
 Een goed voorbeeld van een site die niet duidelijk is zonder afbeeldingen is [trouw.nl](https://www.trouw.nl/): 
