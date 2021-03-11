@@ -7,10 +7,9 @@
 Om images uit te zetten in Google Chrome is vrij eenvoudig. Het pad binnen de instellingen dat je moet volgen om afbeeldingen uit te zetten is: `Settings` => `Privacy an dsecurity` => `Site settings` => `Images` => `Do not show any images`. Hier kun je ook nog aageven op welke specifieke websites je wel of geen afbeeldingen wil tonen.
 
 ### Veroorzaakte problemen
-Het niet laden van afbeeldingen kan voor problemen/verwarring zorgen. Zo kunnen afbeeldingen belangrijk zijn voor het ondersteunen wat er in de tekst verteld wordt. Ook kunnen afbeeldingen dienen als achtergrond, en zonder deze achtergrond kan text verdwijnen.
+Het niet laden van afbeeldingen kan voor problemen/verwarring zorgen. Zo kunnen afbeeldingen belangrijk zijn voor het ondersteunen wat er in de tekst verteld wordt. Ook kunnen afbeeldingen dienen als achtergrond, en zonder deze achtergrond kan text verdwijnen. Dit kan zelfs zo erg worden dat er helemaal geen content meer zichtbaar is op de pagina.
 
 ### Site voorbeelden
-#### Slecht
 Een goed voorbeeld van een site die niet duidelijk is zonder afbeeldingen is [trouw.nl](https://www.trouw.nl/): 
 
 <img width="1819" alt="Screenshot 2021-03-11 at 15 18 41" src="https://user-images.githubusercontent.com/59770136/110803998-0cf8f880-8280-11eb-972d-5e871428f381.png">  
@@ -21,9 +20,9 @@ Hetzelfde geld voor bijvoorbeeld [het Parool](https://www.parool.nl/):
 
 <img width="1819" alt="Screenshot 2021-03-11 at 15 44 14" src="https://user-images.githubusercontent.com/59770136/110804742-bc35cf80-8280-11eb-8043-821aafe5795b.png">
 
-#### Goed
+Het kan zelfs zo erg zijn dat er niks zichtbaar is omdat de content bestaat uit afbeeldingen ([Getty Images](https://www.gettyimages.nl/)):
 
-Wat ik 
+<img width="2386" alt="Screenshot 2021-03-11 at 16 05 42" src="https://user-images.githubusercontent.com/59770136/110808234-14220580-8284-11eb-8dd5-2f072f437c12.png">
 
 ### Oorzaak problemen
 **Er zijn een aantal mogelijkheden waarom afbeeldingen niet laden:**
@@ -34,6 +33,9 @@ Wat ik
 - `Er kunnen problemen zijn met de database`
 
 ### Voorkom problemen
+Het meest belangrijke is:
+- `gebruik alt tags om content duidelijk te maken`
+- `laat de structuur van de site duidelijk zijn`
 
 <br/>
 
