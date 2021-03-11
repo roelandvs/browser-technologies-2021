@@ -92,7 +92,7 @@ Wat opviel bij het testen is dat er op bijna elke site wel links of buttons ware
 
 <img width="868" alt="Screenshot 2021-03-11 at 13 39 20" src="https://user-images.githubusercontent.com/59770136/110789113-cdc2ab80-826f-11eb-9fb0-c0bab5a25fa9.png">
 
-Maar de Hva is zeker niet de enige. Het viel ook erg op binnen Spotify.
+Op dit moment ligt de `:focus` op de "Meld je aan" knop. De Hva is zeker niet de enige. Het viel ook erg op binnen Spotify.
 
 ##### Figma
 
