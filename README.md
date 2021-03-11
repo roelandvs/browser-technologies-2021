@@ -1,22 +1,63 @@
-# Oopdracht 2: Breek het web
-Voor deze opdracht doen we dit enzo...
+# Opdracht 2: Breek het web
 
-## Afbeeldingen
+# Afbeeldingen
 ![Screenshot 2021-03-11 at 12 30 36](https://user-images.githubusercontent.com/59770136/110781309-0bbad200-8266-11eb-9210-7b8742df35ab.png)
 
 ### Feature uitzetten
 Om images uit te zetten in Google Chrome is vrij eenvoudig. Het pad binnen de instellingen dat je moet volgen om afbeeldingen uit te zetten is: `Settings` => `Privacy an dsecurity` => `Site settings` => `Images` => `Do not show any images`. Hier kun je ook nog aageven op welke specifieke websites je wel of geen afbeeldingen wil tonen.
 
-### Site voorbeelden
-
-
 ### Veroorzaakte problemen
+Het niet laden van afbeeldingen kan voor problemen/verwarring zorgen. Zo kunnen afbeeldingen belangrijk zijn voor het ondersteunen wat er in de tekst verteld wordt. Ook kunnen afbeeldingen dienen als achtergrond, en zonder deze achtergrond kan text verdwijnen.
+
+### Site voorbeelden
+#### Slecht
+Een goed voorbeeld van een site die niet duidelijk is zonder afbeeldingen is [trouw.nl](https://www.trouw.nl/): 
+
+<img width="1819" alt="Screenshot 2021-03-11 at 15 18 41" src="https://user-images.githubusercontent.com/59770136/110803998-0cf8f880-8280-11eb-972d-5e871428f381.png">  
+
+Er zijn op deze pagina meerdere fouten gemaakt. Ten eerste is helemaal niks zichtbaar van sommige artikelen. Dit komt doordat ze witte tekst gebruiken en ook een witte achtergrond hebben, dus als de afbeeldingen niet laden is er niks zichtbaar. Daarnaast maken ze ook geen gebruik van `alt text`. Je weet dus niet wat de afbeelding toont en wat de titel is. Er is momenteel niets zichtbaar.
+
+Hetzelfde geld voor bijvoorbeeld [het Parool](https://www.parool.nl/):
+
+<img width="1819" alt="Screenshot 2021-03-11 at 15 44 14" src="https://user-images.githubusercontent.com/59770136/110804742-bc35cf80-8280-11eb-8043-821aafe5795b.png">
+
+#### Goed
+
+Wat ik 
+
 ### Oorzaak problemen
+**Er zijn een aantal mogelijkheden waarom afbeeldingen niet laden:**
+- `Het pad naar de img is fout`
+- `Het bestandsnaam is incorrect`
+- `De website die de afbeeldingen host is down`
+- `De server kan niet alles versturen voordat de request time voorbij is`
+- `Er kunnen problemen zijn met de database`
+
 ### Voorkom problemen
 
 <br/>
 
-## Muis / Trackpad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Muis / Trackpad
 ### Gebruiker zonder muis
 De mensen die gebruik maken van het navigeren via een keyboard is op te delen in grofweg 4 groepen:
 - Gebruikers met motorische problemen, en daardoor geen muis gebruiken
@@ -52,7 +93,7 @@ Een probleem wat mij ook opgevallen was was op de Figma website. Onderaan de pag
 
 <img width="868" alt="Screenshot 2021-03-11 at 13 46 18" src="https://user-images.githubusercontent.com/59770136/110789444-2c882500-8270-11eb-9b97-cf5860341230.png">
 
-Zodra je in dit formulier terecht kwam was zat je vast. Je kon tabben wat je wil maar je blijft binnen dit formulier zitten. Je kon dus niet terug naar de content er boven en ook niet naar de footer er onder meer. Om dus in de footer te komen moest je de pagina refreshen en constant `Shift + Tab` gebruiken om de pagina vanaf beneden te bekijken...
+Zodra je in dit formulier terecht komt zit je vast. Je kon tabben wat je wil maar je blijft binnen dit formulier zitten. Je kon dus niet terug naar de content er boven en ook niet naar de footer er onder meer. Om dus in de footer te komen moest je de pagina refreshen en  `Shift + Tab` gebruiken om de pagina vanaf beneden te bekijken.
 
 ##### Trouw
 
@@ -79,10 +120,15 @@ De oorzaak van naviagtie problemen komt voornamelijk doordat developers native b
 Verder kwam [Chris Ashton](https://www.smashingmagazine.com/2018/07/web-with-just-a-keyboard/) in zijn artikel ook het probleem tegen dat sommige links (`<a>`) geen `href` attributre bevatten. Als dit het geval is kun je er niet op focussen. Bij popups is dit voornamelijk een groot probleem.
 
 ### Voorkom problemen
-De belangrijkste is:
+**De belangrijkste is:**
 - `disable niet de native behavior zonder een vervanging`
+
 Er zijn te veel elementen zonder er focus zichbaarheid. dit maakt het gebruik zonder muis erg lastig.
 
-Verder is belangrijk:
+**Verder is belangrijk:**
 - `schrijf semantische code`
+
 Vergeet bijvoorbeeld geen `href` in een link. Als je wil dat hij nergens heen gaat moet je er een # in stoppen.
+
+**Ten slotte:**
+- `voeg een skip to main content deel toe`
