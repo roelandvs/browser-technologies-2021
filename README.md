@@ -1,3 +1,14 @@
+# Schetsen Eindopdracht
+![WhatsApp Image 2021-03-17 at 15 53 10](https://user-images.githubusercontent.com/59770136/111488151-48406f00-8739-11eb-9c32-ed4147661dea.jpeg)
+![WhatsApp Image 2021-03-17 at 15 53 10 (1)](https://user-images.githubusercontent.com/59770136/111488157-4a0a3280-8739-11eb-8feb-61e430446671.jpeg)
+![WhatsApp Image 2021-03-17 at 15 53 10 (2)](https://user-images.githubusercontent.com/59770136/111488164-4b3b5f80-8739-11eb-92c5-60fe12e89bb2.jpeg)
+
+
+
+
+
+
+
 # Opdracht 2: Breek het web
 
 # Afbeeldingen
