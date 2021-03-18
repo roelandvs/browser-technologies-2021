@@ -17,12 +17,12 @@ app.get('/', (req, res) => {
         // });
 })
 
-// app.get('/:id', (req, res) => {
-//     detailDataTransformation(req.params.id)
-//         .then(response => {
-//             res.render('pages/detail', { data: response })
-//         });
-// })
+app.get('/:id', (req, res) => {
+    // detailDataTransformation(req.params.id)
+    //     .then(response => {
+            res.render('pages/form')
+        // });
+})
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
