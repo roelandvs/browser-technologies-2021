@@ -1,5 +1,4 @@
 function getCourseData(course) {
-    
     const courseData = [
         {
             name: 'WAFS',
