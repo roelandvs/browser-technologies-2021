@@ -1,17 +1,17 @@
 <form action="post">
     <fieldset>
+        <% console.log(data) %>
+
         <h2>Docenten</h2>
-        <p>Web Apps From Scratch</p>
+        <p><%= data.full_name %></p>
 
         <label for="docent">Docent</label>
         <input list="docenten" name="docent" id="docent">
 
         <datalist id="docenten">
-            <option value="Jan Janneman"></option>
-            <option value="Jan Janneman"></option>
-            <option value="Jan Janneman"></option>
-            <option value="Jan Janneman"></option>
-            <option value="Jan Janneman"></option>
+            <% data.teachers.forEach(teacher => { %>
+                <option value="<%= teacher %>"></option>
+            <% }) %>
         </datalist>
 
         <label for="name">Naam</label>
@@ -20,7 +20,7 @@
 
     <fieldset>
         <h2>Datums</h2>
-        <p>Web Apps From Scratch</p>
+        <p><%= data.full_name %></p>
 
         <label for="begin">Begin vak</label>
         <input type="date" name="begin" id="begin">
@@ -31,7 +31,7 @@
 
     <fieldset>
         <h2>Beoordeeling</h2>
-        <p>Web Apps From Scratch</p>
+        <p><%= data.full_name %></p>
 
         <p>Algemene beoordeling</p>
         <input type="radio" name="algemeen-beoordeling" id="algemeen-1">
@@ -129,7 +129,7 @@
 
     <fieldset>
         <h2>Opmerking</h2>
-        <p>Web Apps From Scratch</p>
+        <p><%= data.full_name %></p>
 
         <label for="toevoeging">Wil je nog iets toevoegen?</label>
         <textarea name="toevoeging" id="toevoeging" cols="30" rows="10"></textarea>
