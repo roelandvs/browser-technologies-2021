@@ -2,26 +2,27 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// const { dataTransformation } = require('./js/data/dataTransformation');
-// const { detailDataTransformation } = require('./js/data/detailDataTransformation');
+const { getCourseData } = require('./js/getCourseData');
 
 app
     .use(express.static('public'))
     .set('view engine', 'ejs')
 
 //routes
-app.get('/', (req, res) => {
+app.get('/courses', (req, res) => {
     // dataTransformation()
     //     .then(response => {
             res.render('pages/overview')
         // });
 })
 
-app.get('/:id', (req, res) => {
-    // detailDataTransformation(req.params.id)
+app.get('/courses/:id', (req, res) => {
+    // getCourseData(req.params.id)
     //     .then(response => {
-            res.render('pages/form')
-        // });
+    //         res.render('pages/form', { data: response })
+    //     });
+
+    res.render('pages/form', { data: getCourseData(req.params.id)[0] })
 })
 
 app.listen(port, () => {
