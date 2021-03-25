@@ -1,9 +1,9 @@
 <ul>
-    <li><a href="WAFS/<%= data %>">Web Apps From Scratch</a></li>
-    <li><a href="CSSTTR/<%= data %>">CSS To The Rescue</a></li>
-    <li><a href="BT/<%= data %>">Browser Technologies</a></li>
-    <li><a href="PWA/<%= data %>">Progressive Web Apps</a></li>
-    <li><a href="RTW/<%= data %>">Real-Time Web</a></li>
-    <li><a href="HCD/<%= data %>">Human Centred Design</a></li>
-    <li><a href="MP/<%= data %>">Meesterproef</a></li>
+    <% data.forEach(course => { %>
+        <% if (course.complete === false) { %>
+            <li><a class="incomplete" href="<%= course.survey %>/<%= id %>"><%= course.courseName %></a></li>
+        <% } else { %>
+            <li><a class="complete" href="<%= course.survey %>/<%= id %>"><%= course.courseName %></a></li>
+        <% } %>
+    <% }) %>
 </ul>

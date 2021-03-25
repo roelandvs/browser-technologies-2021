@@ -14,9 +14,9 @@ function addFormContent(form, res, course, user) {
     // Assign obj.users to data
 	data = obj.users;
 
-	data.forEach(entry => {
-		if (entry.id === user) {
-			let currentCourse = entry.surveys.find(survey => survey.survey === course);
+	data.forEach(student => {
+		if (student.id === user) {
+			let currentCourse = student.surveys.find(courses => courses.survey === course);
 			currentCourse.answers = form;
 			currentCourse.complete = true;
 
@@ -28,6 +28,8 @@ function addFormContent(form, res, course, user) {
 					console.log(err);
 				};
 			});
+
+			res.redirect(`/courses/${user}`);
 		}
 	})
 };

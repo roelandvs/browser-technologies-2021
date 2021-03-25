@@ -8,30 +8,37 @@ function createNewUser(studentId, studentName) {
 		surveys: [
 			{
 				survey: 'WAFS',
+				courseName: 'Web App From Scratch',
 				complete: false,
 			},
 			{
 				survey: 'CSSTTR',
+				courseName: 'CSS To The Rescue',
 				complete: false,
 			},
 			{
 				survey: 'PWA',
+				courseName: 'Progressive Web Apps',
 				complete: false,
 			},
 			{
 				survey: 'BT',
+				courseName: 'Browser Technologies',
 				complete: false,
 			},
 			{
 				survey: 'RTW',
+				courseName: 'Real-Time Web',
 				complete: false,
 			},
 			{
 				survey: 'HCD',
+				courseName: 'Human Centred Design',
 				complete: false,
 			},
             {
 				survey: 'MP',
+				courseName: 'Meesterproef',
 				complete: false,
 			}
 		],

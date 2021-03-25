@@ -2,8 +2,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-const { getCourseData } = require('./js/getCourseData');
 const { checkUser } = require('./js/checkUser');
+const { checkCourses } = require('./js/checkCourses');
+const { getCourseData } = require('./js/getCourseData');
 const { addFormContent } = require('./js/addFormContent');
 
 app
@@ -21,7 +22,7 @@ app.post('/', (req, res) => {
 })
 
 app.get('/courses/:id', (req, res) => {
-    res.render('pages/overview', { data: req.params.id })
+    res.render('pages/overview', { data: checkCourses(req.params.id)[0], id: req.params.id })
 })
 
 app.get('/courses/:course/:id', (req, res) => {
