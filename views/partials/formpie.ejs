@@ -1,4 +1,4 @@
-<form action="post">
+<form action="/courses/<%= data.name %>/<%= studentId %>" method="post">
     <fieldset>
         <h2>Docenten</h2>
         <p><%= data.full_name %></p>
@@ -131,5 +131,6 @@
 
         <label for="toevoeging">Wil je nog iets toevoegen?</label>
         <textarea name="toevoeging" id="toevoeging" cols="30" rows="10"></textarea>
+        <input type="submit" value="Log in">
     </fieldset>
 </form> 

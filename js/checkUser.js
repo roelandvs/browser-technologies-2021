@@ -7,29 +7,33 @@ function createNewUser(studentId, studentName) {
 		name: studentName,
 		surveys: [
 			{
-				survey: 'wafs',
+				survey: 'WAFS',
 				complete: false,
 			},
 			{
-				survey: 'csstr',
+				survey: 'CSSTTR',
 				complete: false,
 			},
 			{
-				survey: 'pwa',
+				survey: 'PWA',
 				complete: false,
 			},
 			{
-				survey: 'bt',
+				survey: 'BT',
 				complete: false,
 			},
 			{
-				survey: 'rtwa',
+				survey: 'RTW',
 				complete: false,
 			},
 			{
-				survey: 'ucd',
+				survey: 'HCD',
 				complete: false,
 			},
+            {
+				survey: 'MP',
+				complete: false,
+			}
 		],
 	};
 
@@ -39,7 +43,7 @@ function createNewUser(studentId, studentName) {
 
 function checkUser(form, res) {
     const studentId = form.studentId;
-    const studentName = form.studentName;
+    const studentName = form.name;
 	let data = [];
 
     //copied from Ben: https://github.com/benl95/browser-technologies-2021/blob/master/data/helpers/authUser.js
@@ -57,7 +61,7 @@ function checkUser(form, res) {
 	// Check if user exists
 	if (data.some((user) => user.id === studentId)) {
 		// If user exists, redirect to home page
-		return res.render('pages/overview');
+		return res.redirect(`/courses/${studentId}`);
 	} else {
 		// Create new user object
 		const newUser = createNewUser(studentId, studentName);
@@ -73,7 +77,7 @@ function checkUser(form, res) {
 				console.log('User created');
 			}
 		});
-		return res.render('pages/overview');
+		return res.redirect(`/courses/${studentId}`);
 	}
 };
 
