@@ -14,7 +14,22 @@ function addFormContent(form, res, course, user) {
     // Assign obj.users to data
 	data = obj.users;
 
-    console.log(course, user);
+	data.forEach(entry => {
+		if (entry.id === user) {
+			let currentCourse = entry.surveys.find(survey => survey.survey === course);
+			currentCourse.answers = form;
+			currentCourse.complete = true;
+
+			// Stringify object to JSON
+			const json = JSON.stringify(obj);
+			// Add data to JSON file
+			fs.writeFileSync('./js/data.json', json, (err) => {
+				if (err) {
+					console.log(err);
+				};
+			});
+		}
+	})
 };
 
 module.exports = { addFormContent }

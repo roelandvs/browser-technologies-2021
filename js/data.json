@@ -1,1 +1,94 @@
-{"users":[{"id":"sadf","name":"Jas","surveys":[{"survey":"WAFS","complete":false},{"survey":"CSSTTR","complete":false},{"survey":"PWA","complete":false},{"survey":"BT","complete":false},{"survey":"RTW","complete":false},{"survey":"HCD","complete":false},{"survey":"MP","complete":false}]},{"id":"","name":"","surveys":[{"survey":"WAFS","complete":false},{"survey":"CSSTTR","complete":false},{"survey":"PWA","complete":false},{"survey":"BT","complete":false},{"survey":"RTW","complete":false},{"survey":"HCD","complete":false},{"survey":"MP","complete":false}]},{"id":"50082345","name":"Roeland","surveys":[{"survey":"WAFS","complete":false},{"survey":"CSSTTR","complete":false},{"survey":"PWA","complete":false},{"survey":"BT","complete":false},{"survey":"RTW","complete":false},{"survey":"HCD","complete":false},{"survey":"MP","complete":false}]},{"id":"Hallo","name":"Roeland","surveys":[{"survey":"WAFS","complete":false},{"survey":"CSSTTR","complete":false},{"survey":"PWA","complete":false},{"survey":"BT","complete":false},{"survey":"RTW","complete":false},{"survey":"HCD","complete":false},{"survey":"MP","complete":false}]}]}
+{
+  "users": [
+    {
+      "id": "sadf",
+      "name": "Jas",
+      "surveys": [
+        { "survey": "WAFS", "complete": false },
+        { "survey": "CSSTTR", "complete": false },
+        { "survey": "PWA", "complete": false },
+        { "survey": "BT", "complete": false },
+        { "survey": "RTW", "complete": false },
+        { "survey": "HCD", "complete": false },
+        { "survey": "MP", "complete": false }
+      ]
+    },
+    {
+      "id": "",
+      "name": "",
+      "surveys": [
+        { "survey": "WAFS", "complete": false },
+        { "survey": "CSSTTR", "complete": false },
+        { "survey": "PWA", "complete": false },
+        { "survey": "BT", "complete": false },
+        { "survey": "RTW", "complete": false },
+        { "survey": "HCD", "complete": false },
+        { "survey": "MP", "complete": false }
+      ]
+    },
+    {
+      "id": "50082345",
+      "name": "Roeland",
+      "surveys": [
+        { "survey": "WAFS", "complete": false },
+        { "survey": "CSSTTR", "complete": false },
+        { "survey": "PWA", "complete": false },
+        { "survey": "BT", "complete": false },
+        { "survey": "RTW", "complete": false },
+        { "survey": "HCD", "complete": false },
+        { "survey": "MP", "complete": false }
+      ]
+    },
+    {
+      "id": "Hallo",
+      "name": "Roeland",
+      "surveys": [
+        { "survey": "WAFS", "complete": false },
+        { "survey": "CSSTTR", "complete": false },
+        { "survey": "PWA", "complete": false },
+        { "survey": "BT", "complete": false },
+        { "survey": "RTW", "complete": false },
+        { "survey": "HCD", "complete": false },
+        { "survey": "MP", "complete": false }
+      ]
+    },
+    {
+      "id": "de cklown",
+      "name": "Pipo",
+      "surveys": [
+        { "survey": "WAFS", "complete": false },
+        { "survey": "CSSTTR", "complete": false },
+        { "survey": "PWA", "complete": false },
+        { "survey": "BT", "complete": false },
+        { "survey": "RTW", "complete": false },
+        { "survey": "HCD", "complete": false },
+        { "survey": "MP", "complete": false }
+      ]
+    },
+    {
+      "id": "decklown",
+      "name": "Pipo",
+      "surveys": [
+        { "survey": "WAFS", "complete": false },
+        {
+          "survey": "CSSTTR",
+          "complete": true,
+          "answers": {
+            "docent": "Vasilis van Gemert",
+            "name": "Jas",
+            "begin": "",
+            "einde": "",
+            "moeilijkheidsgraad": "4",
+            "kwaliteit": "6",
+            "toevoeging": ""
+          }
+        },
+        { "survey": "PWA", "complete": false },
+        { "survey": "BT", "complete": false },
+        { "survey": "RTW", "complete": false },
+        { "survey": "HCD", "complete": false },
+        { "survey": "MP", "complete": false }
+      ]
+    }
+  ]
+}
