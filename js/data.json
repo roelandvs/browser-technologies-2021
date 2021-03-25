@@ -1,1 +1,44 @@
-{"users":[{"id":"","name":"","surveys":[{"survey":"WAFS","courseName":"Web App From Scratch","complete":false},{"survey":"CSSTTR","courseName":"CSS To The Rescue","complete":false},{"survey":"PWA","courseName":"Progressive Web Apps","complete":false},{"survey":"BT","courseName":"Browser Technologies","complete":false},{"survey":"RTW","courseName":"Real-Time Web","complete":false},{"survey":"HCD","courseName":"Human Centred Design","complete":false},{"survey":"MP","courseName":"Meesterproef","complete":false}]},{"id":"50082345","name":"Roeland van Stee","surveys":[{"survey":"WAFS","courseName":"Web App From Scratch","complete":false},{"survey":"CSSTTR","courseName":"CSS To The Rescue","complete":false},{"survey":"PWA","courseName":"Progressive Web Apps","complete":false},{"survey":"BT","courseName":"Browser Technologies","complete":false},{"survey":"RTW","courseName":"Real-Time Web","complete":false},{"survey":"HCD","courseName":"Human Centred Design","complete":false},{"survey":"MP","courseName":"Meesterproef","complete":false}]}]}
+{
+  "users": [
+    {
+      "id": "sfad435",
+      "name": "Roeland van Stee",
+      "surveys": [
+        {
+          "survey": "WAFS",
+          "courseName": "Web App From Scratch",
+          "complete": false,
+          "answers": {
+            "docent": "Suus ten Voorde",
+            "name": "Roeland van Stee",
+            "begin": "",
+            "einde": "",
+            "toevoeging": "sfb"
+          }
+        },
+        {
+          "survey": "CSSTTR",
+          "courseName": "CSS To The Rescue",
+          "complete": false
+        },
+        {
+          "survey": "PWA",
+          "courseName": "Progressive Web Apps",
+          "complete": false
+        },
+        {
+          "survey": "BT",
+          "courseName": "Browser Technologies",
+          "complete": false
+        },
+        { "survey": "RTW", "courseName": "Real-Time Web", "complete": false },
+        {
+          "survey": "HCD",
+          "courseName": "Human Centred Design",
+          "complete": false
+        },
+        { "survey": "MP", "courseName": "Meesterproef", "complete": false }
+      ]
+    }
+  ]
+}
