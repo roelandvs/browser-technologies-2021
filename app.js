@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
@@ -9,7 +8,7 @@ const { addFormContent } = require('./js/addFormContent');
 
 app
     .use(express.static('public'))
-    .use(bodyParser.urlencoded({extended: true}))
+    .use(express.urlencoded({extended: true}))
     .set('view engine', 'ejs')
 
 //routes
