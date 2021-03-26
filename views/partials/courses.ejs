@@ -3,7 +3,7 @@
         <% if (course.complete === false) { %>
             <li><a class="incomplete" href="<%= course.survey %>/<%= id %>"><%= course.courseName %></a></li>
         <% } else { %>
-            <li><a class="complete"><%= course.courseName %></a></li>
+            <li class="complete"><%= course.courseName %><img src="/img/mark.svg" alt="checkmark"></li>
         <% } %>
     <% }) %>
 </ul>

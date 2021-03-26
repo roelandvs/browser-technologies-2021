@@ -1,10 +1,10 @@
 <form action="/courses/<%= data.name %>/<%= studentId %>" method="post">
     <fieldset>
-        <h2>Docenten</h2>
-        <p><%= data.full_name %></p>
+        <legend>Docenten</legend>
+        <p class="legend-subtitle"><%= data.full_name %> (1/4)</p>
 
         <label for="docent">Docent</label>
-        <input list="docenten" name="docent" id="docent">
+        <input list="docenten" name="docent" id="docent" required>
 
         <datalist id="docenten">
             <% data.teachers.forEach(teacher => { %>
@@ -13,124 +13,130 @@
         </datalist>
 
         <label for="name">Naam</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" required>
     </fieldset>
 
     <fieldset>
-        <h2>Datums</h2>
-        <p><%= data.full_name %></p>
+        <legend>Datums</legend>
+        <p class="legend-subtitle"><%= data.full_name %> (2/4)</p>
 
         <label for="begin">Begin vak</label>
-        <input type="date" name="begin" id="begin">
+        <input type="date" name="begin" id="begin" required>
 
         <label for="einde">Einde vak</label>
-        <input type="date" name="einde" id="einde">
+        <input type="date" name="einde" id="einde" required>
     </fieldset>
 
     <fieldset>
-        <h2>Beoordeeling</h2>
-        <p><%= data.full_name %></p>
+        <legend>Beoordeeling</legend>
+        <p class="legend-subtitle"><%= data.full_name %> (3/4)</p>
 
         <p>Algemene beoordeling</p>
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-1" value="1">
-        <label for="algemeen-1">1</label>
+        <div class="radio-container">
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-1" value="1" required>
+            <label for="algemeen-1">1</label>
 
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-2" value="2">
-        <label for="algemeen-2">2</label>
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-2" value="2" required>
+            <label for="algemeen-2">2</label>
 
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-3" value="3">
-        <label for="algemeen-3">3</label>
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-3" value="3" required>
+            <label for="algemeen-3">3</label>
 
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-4" value="4">
-        <label for="algemeen-4">4</label>
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-4" value="4" required>
+            <label for="algemeen-4">4</label>
 
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-5" value="5">
-        <label for="algemeen-5">5</label>
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-5" value="5" required>
+            <label for="algemeen-5">5</label>
 
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-6" value="6">
-        <label for="algemeen-6">6</label>
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-6" value="6" required>
+            <label for="algemeen-6">6</label>
 
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-7" value="7">
-        <label for="algemeen-7">7</label>
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-7" value="7" required>
+            <label for="algemeen-7">7</label>
 
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-8" value="8">
-        <label for="algemeen-8">8</label>
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-8" value="8" required>
+            <label for="algemeen-8">8</label>
 
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-9" value="9">
-        <label for="algemeen-9">9</label>
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-9" value="9" required>
+            <label for="algemeen-9">9</label>
 
-        <input type="radio" name="algemeen-beoordeling" id="algemeen-10" value="10">
-        <label for="algemeen-10">10</label>
+            <input type="radio" name="algemeen-beoordeling" id="algemeen-10" value="10" required>
+            <label for="algemeen-10">10</label>
+        </div>
 
         <p>Moeilijkheidsgraad</p>
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-1" value="1">
-        <label for="moeilijkheidsgraad-1">1</label>
+        <div class="radio-container">
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-1" value="1" required>
+            <label for="moeilijkheidsgraad-1">1</label>
 
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-2" value="2">
-        <label for="moeilijkheidsgraad-2">2</label>
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-2" value="2" required>
+            <label for="moeilijkheidsgraad-2">2</label>
 
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-3" value="3">
-        <label for="moeilijkheidsgraad-3">3</label>
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-3" value="3" required>
+            <label for="moeilijkheidsgraad-3">3</label>
 
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-4" value="4">
-        <label for="moeilijkheidsgraad-4">4</label>
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-4" value="4" required>
+            <label for="moeilijkheidsgraad-4">4</label>
 
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-5" value="5">
-        <label for="moeilijkheidsgraad-5">5</label>
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-5" value="5" required>
+            <label for="moeilijkheidsgraad-5">5</label>
 
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-6" value="6">
-        <label for="moeilijkheidsgraad-6">6</label>
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-6" value="6" required>
+            <label for="moeilijkheidsgraad-6">6</label>
 
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-7" value="7">
-        <label for="moeilijkheidsgraad-7">7</label>
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-7" value="7" required>
+            <label for="moeilijkheidsgraad-7">7</label>
 
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-8" value="8">
-        <label for="moeilijkheidsgraad-8">8</label>
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-8" value="8" required>
+            <label for="moeilijkheidsgraad-8">8</label>
 
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-9" value="9">
-        <label for="moeilijkheidsgraad-9">9</label>
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-9" value="9" required>
+            <label for="moeilijkheidsgraad-9">9</label>
 
-        <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-10" value="10">
-        <label for="moeilijkheidsgraad-10">10</label>
+            <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-10" value="10" required>
+            <label for="moeilijkheidsgraad-10">10</label>
+        </div>
 
         <p>Kwaliteit uitleg</p>
-        <input type="radio" name="kwaliteit" id="kwaliteit-1" value="1">
-        <label for="kwaliteit-1">1</label>
+        <div class="radio-container">
+            <input type="radio" name="kwaliteit" id="kwaliteit-1" value="1" required>
+            <label for="kwaliteit-1">1</label>
 
-        <input type="radio" name="kwaliteit" id="kwaliteit-2" value="2">
-        <label for="kwaliteit-2">2</label>
+            <input type="radio" name="kwaliteit" id="kwaliteit-2" value="2" required>
+            <label for="kwaliteit-2">2</label>
 
-        <input type="radio" name="kwaliteit" id="kwaliteit-3" value="3">
-        <label for="kwaliteit-3">3</label>
+            <input type="radio" name="kwaliteit" id="kwaliteit-3" value="3" required>
+            <label for="kwaliteit-3">3</label>
 
-        <input type="radio" name="kwaliteit" id="kwaliteit-4" value="4">
-        <label for="kwaliteit-4">4</label>
+            <input type="radio" name="kwaliteit" id="kwaliteit-4" value="4" required>
+            <label for="kwaliteit-4">4</label>
 
-        <input type="radio" name="kwaliteit" id="kwaliteit-5" value="5">
-        <label for="kwaliteit-5">5</label>
+            <input type="radio" name="kwaliteit" id="kwaliteit-5" value="5" required>
+            <label for="kwaliteit-5">5</label>
 
-        <input type="radio" name="kwaliteit" id="kwaliteit-6" value="6">
-        <label for="kwaliteit-6">6</label>
+            <input type="radio" name="kwaliteit" id="kwaliteit-6" value="6" required>
+            <label for="kwaliteit-6">6</label>
 
-        <input type="radio" name="kwaliteit" id="kwaliteit-7" value="7">
-        <label for="kwaliteit-7">7</label>
+            <input type="radio" name="kwaliteit" id="kwaliteit-7" value="7" required>
+            <label for="kwaliteit-7">7</label>
 
-        <input type="radio" name="kwaliteit" id="kwaliteit-8" value="8">
-        <label for="kwaliteit-8">8</label>
+            <input type="radio" name="kwaliteit" id="kwaliteit-8" value="8" required>
+            <label for="kwaliteit-8">8</label>
 
-        <input type="radio" name="kwaliteit" id="kwaliteit-9" value="9">
-        <label for="kwaliteit-9">9</label>
+            <input type="radio" name="kwaliteit" id="kwaliteit-9" value="9" required>
+            <label for="kwaliteit-9">9</label>
 
-        <input type="radio" name="kwaliteit" id="kwaliteit-10" value="10">
-        <label for="kwaliteit-10">10</label>
+            <input type="radio" name="kwaliteit" id="kwaliteit-10" value="10" required>
+            <label for="kwaliteit-10">10</label>
+        </div>
     </fieldset>
 
     <fieldset>
-        <h2>Opmerking</h2>
-        <p><%= data.full_name %></p>
+        <legend>Opmerking</legend>
+        <p class="legend-subtitle"><%= data.full_name %> (4/4)</p>
 
         <label for="toevoeging">Wil je nog iets toevoegen?</label>
-        <textarea name="toevoeging" id="toevoeging" cols="30" rows="10"></textarea>
+        <textarea name="toevoeging" id="toevoeging" cols="30" rows="10" required></textarea>
         <input type="submit" value="Submit">
     </fieldset>
 </form> 
