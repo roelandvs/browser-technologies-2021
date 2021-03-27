@@ -9,7 +9,7 @@ function addInputs() {
         if(storedInput) {
             if(input.type === 'radio' && input.value === storedInput) {
                 input.checked = true;
-            } else if(input.type !== 'radio' && input.type !== 'submit') {
+            } else if(input.type !== 'radio') {
                 input.value = storedInput;
             };
         };
@@ -17,8 +17,10 @@ function addInputs() {
 };
 
 form.addEventListener('focusout', function(event) {
-    //adds course name to begin of input name in LS
-    localStorage.setItem(`${form.id}-${event.target.name}`, event.target.value)
+    if(event.target.type !== 'submit') {
+        //adds course name to begin of input name in LS
+        localStorage.setItem(`${form.id}-${event.target.name}`, event.target.value)
+    }
 }, true);
 
-window.addEventListener('load', addInputs)
+window.addEventListener('load', addInputs);
