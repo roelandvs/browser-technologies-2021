@@ -39,6 +39,7 @@ h1 span {
 }
 
 label,
+h1 + p,
 legend ~ p,
 .legend-subtitle {
     font-weight: 300;

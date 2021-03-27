@@ -1,23 +1,23 @@
 const form = document.querySelector('form');
-const inputs = document.querySelectorAll('form input');
 
 function addInputs() {
+    const inputs = document.querySelectorAll('form input');
+
     inputs.forEach(input => {
         const storedInput = localStorage.getItem(`${form.id}-${input.name}`);
 
         if(storedInput) {
             if(input.type === 'radio' && input.value === storedInput) {
                 input.checked = true;
-                // console.log(input.value)
-            } else if(input.type !== 'radio') {
+            } else if(input.type !== 'radio' && input.type !== 'submit') {
                 input.value = storedInput;
             };
         };
     });
 };
 
-//maybe event focusout is better for performance?
-form.addEventListener('focusout', function (event) {
+form.addEventListener('focusout', function(event) {
+    //adds course name to begin of input name in LS
     localStorage.setItem(`${form.id}-${event.target.name}`, event.target.value)
 }, true);
 
