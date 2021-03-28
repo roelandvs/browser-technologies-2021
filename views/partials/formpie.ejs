@@ -36,7 +36,7 @@
         <p class="legend-subtitle"><%= data.full_name %> (3/4)</p>
 
         <p>Algemene beoordeling</p>
-        <div class="radio-container">
+        <div class="radio-container" id="algemeen-beoordeling">
             <input type="radio" name="algemeen-beoordeling" id="algemeen-1" value="1" required>
             <label for="algemeen-1">1</label>
 
@@ -69,7 +69,7 @@
         </div>
 
         <p>Moeilijkheidsgraad</p>
-        <div class="radio-container">
+        <div class="radio-container" id="moeilijkheidsgraad">
             <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-1" value="1" required>
             <label for="moeilijkheidsgraad-1">1</label>
 
@@ -102,7 +102,7 @@
         </div>
 
         <p>Kwaliteit uitleg</p>
-        <div class="radio-container">
+        <div class="radio-container" id="kwaliteit">
             <input type="radio" name="kwaliteit" id="kwaliteit-1" value="1" required>
             <label for="kwaliteit-1">1</label>
 
@@ -142,7 +142,7 @@
         <p class="legend-subtitle"><%= data.full_name %> (4/4)</p>
 
         <label for="toevoeging">Wil je nog iets toevoegen?</label>
-        <textarea name="toevoeging" id="toevoeging" cols="30" rows="10" required></textarea>
+        <textarea name="toevoeging" id="toevoeging" cols="30" rows="10"></textarea>
         <input type="submit" value="Submit">
     </fieldset>
 </form> 

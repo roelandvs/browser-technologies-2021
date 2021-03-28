@@ -71,14 +71,6 @@ input {
     display: block;
 }
 
-input[type="text"].invalid,
-input[type="date"].invalid,
-input[list].invalid,
-textarea.invalid {
-    border: 1px solid var(--err-border-color);
-    background-color: var(--err-input-color);
-}
-
 input[type="text"],
 input[type="date"],
 input[list],
@@ -94,6 +86,14 @@ textarea {
     padding-left: 10px;
     font-family: inherit;
     color: #707070;
+}
+
+input[type="text"].invalid,
+input[type="date"].invalid,
+input[list].invalid,
+textarea.invalid {
+    border: 1px solid var(--err-border-color);
+    background-color: var(--err-input-color);
 }
 
 input[type="submit"],
@@ -112,15 +112,6 @@ input[type="submit"],
 
 input[type="date"] {
     width: auto;
-}
-
-.radio-container {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(5, 1fr);
-    width: 100%;
-    margin-bottom: 20px;
-    max-width: 300px;
 }
 
 input[type="radio"] {
@@ -145,6 +136,21 @@ input[type="radio"]:checked + label {
     color: var(--main-color);
     border: 2px solid var(--main-color);
     font-weight: 500;
+    background-color: #FFF;
+}
+
+.radio-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.radio-container.invalid {
+    /* border: 2px solid var(--err-border-color); */
+    background-color: var(--err-input-color);
 }
 
 textarea {
