@@ -19,7 +19,7 @@ function addInputs() {
 form.addEventListener('focusout', function(event) {
     if(event.target.type !== 'submit') {
         //adds course name to begin of input name in LS
-        localStorage.setItem(`${form.id}-${event.target.name}`, event.target.value)
+        localStorage.setItem(`${form.id}-${event.target.name}`, event.target.value);
     }
 }, true);
 
