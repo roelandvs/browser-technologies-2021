@@ -10,6 +10,8 @@
     --input-border: #C5C5C5;
     --inactive-color: #C8C8C8; 
     --disabled-color: #E5E5E5; 
+    --err-border-color: #ff683a;
+    --err-input-color: #ffece7;
 
     --padding-big: 50px;
     --padding-tiny: 5px;
@@ -17,6 +19,7 @@
     --margin-tiny: 5px;
 
     --display-fieldset: block;
+    --display-buttons: none;
 }
 
 body {
@@ -68,6 +71,14 @@ input {
     display: block;
 }
 
+input[type="text"].invalid,
+input[type="date"].invalid,
+input[list].invalid,
+textarea.invalid {
+    border: 1px solid var(--err-border-color);
+    background-color: var(--err-input-color);
+}
+
 input[type="text"],
 input[type="date"],
 input[list],
@@ -100,7 +111,7 @@ input[type="submit"],
 }
 
 input[type="date"] {
-    /* width: auto; */
+    width: auto;
 }
 
 .radio-container {
@@ -108,7 +119,6 @@ input[type="date"] {
     gap: 5px;
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
-    /* justify-content: space-between; */
     margin-bottom: 20px;
     max-width: 300px;
 }
@@ -152,7 +162,7 @@ fieldset:valid + fieldset {
 }
 
 .next-button {
-    display: none;
+    display: var(--display-buttons);
 }
 
 /* Courses page */
