@@ -11,13 +11,17 @@
 
     <main>
         <form action="/" method="post" id="login">
-            <label for="name">Naam</label>
-            <input type="text" name="name" id="name" required>
+            <fieldset>
+                <label for="name">Naam</label>
+                <input type="text" name="name" id="name" required>
+                <p id="err-name"></p>
 
-            <label for="studentId">Studentennummer</label>
-            <input type="text" name="studentId" id="studentId" required>
+                <label for="studentId">Studentennummer</label>
+                <input type="text" name="studentId" id="studentId" required>
+                <p id="studentId"></p>
 
-            <input type="submit" value="Next">
+                <input type="submit" value="Next">
+            </fieldset>
         </form>
     </main>
 

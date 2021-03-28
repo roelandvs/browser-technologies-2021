@@ -55,6 +55,14 @@ legend ~ p {
     margin-bottom: var(--margin-tiny);
 }
 
+input + p,
+.radio-container + p {
+    margin: 1px 0 8px;
+    height: 1em;
+    font-size: 0.9em;
+    color: var(--err-border-color);
+}
+
 a,
 a:visited {
     text-decoration: none;
@@ -80,9 +88,8 @@ textarea {
     height: 35px;
     background-color: var(--input-color);
     border: 1px solid var(--input-border);
-    margin: 0;
     width: 100%;
-    margin: var(--margin-tiny) 0 20px;
+    margin: var(--margin-tiny) 0 0;
     padding-left: 10px;
     font-family: inherit;
     color: #707070;
@@ -144,7 +151,6 @@ input[type="radio"]:checked + label {
     gap: 5px;
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
-    margin-bottom: 20px;
     max-width: 300px;
 }
 

@@ -5,6 +5,7 @@
 
         <label for="docent">Docent</label>
         <input list="docenten" name="docent" id="docent" required>
+        <p id="err-docent"></p>
 
         <datalist id="docenten">
             <% data.teachers.forEach(teacher => { %>
@@ -14,6 +15,7 @@
 
         <label for="name">Naam</label>
         <input type="text" name="name" id="name" required>
+        <p id="err-name"></p>
 
         <button class="next-button" type="button">Next</button>
     </fieldset>
@@ -24,9 +26,11 @@
 
         <label for="begin">Begin vak</label>
         <input type="date" name="begin" id="begin" required>
+        <p id="err-begin"></p>
 
         <label for="einde">Einde vak</label>
         <input type="date" name="einde" id="einde" required>
+        <p id="err-einde"></p>
 
         <button class="next-button" type="button">Next</button>
     </fieldset>
@@ -67,6 +71,7 @@
             <input type="radio" name="algemeen-beoordeling" id="algemeen-10" value="10" required>
             <label for="algemeen-10">10</label>
         </div>
+        <p id="err-algemeen-beoordeling"></p>
 
         <p>Moeilijkheidsgraad</p>
         <div class="radio-container" id="moeilijkheidsgraad">
@@ -100,6 +105,7 @@
             <input type="radio" name="moeilijkheidsgraad" id="moeilijkheidsgraad-10" value="10" required>
             <label for="moeilijkheidsgraad-10">10</label>
         </div>
+        <p id="err-moeilijkheidsgraad"></p>
 
         <p>Kwaliteit uitleg</p>
         <div class="radio-container" id="kwaliteit">
@@ -133,6 +139,7 @@
             <input type="radio" name="kwaliteit" id="kwaliteit-10" value="10" required>
             <label for="kwaliteit-10">10</label>
         </div>
+        <p id="err-kwaliteit"></p>
 
         <button class="next-button" type="button">Next</button>
     </fieldset>

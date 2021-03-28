@@ -10,25 +10,38 @@ export function checkFieldset(fieldsets, activeFieldset) {
     let valid = true;
 
     for (let i = 0; i < input.length; i++) {
-        // console.log(input[i].getAttribute("name"))
+        const errMsg = document.getElementById(`err-${input[i].getAttribute('name')}`);
+
         switch (input[i].getAttribute('name')) {
-            case 'docent':
+            case 'studentId':
                 if (input[i].value.length < 2) {
                     input[i].classList.add('invalid');
+                    errMsg.innerText = 'Dit veld is verplicht';
                     valid = false;
                 } else if (input[i].classList.contains('invalid')) {
                     input[i].classList.remove('invalid');
-                    // document.getElementById('error-name').innerHTML = '';
+                    errMsg.innerText = '';
+                }
+            break;
+
+            case 'docent':
+                if (input[i].value.length < 2) {
+                    input[i].classList.add('invalid');
+                    errMsg.innerText = 'Dit veld is verplicht';
+                    valid = false;
+                } else if (input[i].classList.contains('invalid')) {
+                    input[i].classList.remove('invalid');
+                    errMsg.innerText = '';
                 }
             break;
 
             case 'name':
                 if (input[i].value.length < 2) {
                     input[i].classList.add('invalid');
+                    errMsg.innerText = 'Dit veld is verplicht';
                     valid = false;
                 } else if (input[i].classList.contains('invalid')) {
                     input[i].classList.remove('invalid');
-                    // document.getElementById('error-name').innerHTML = '';
                 }
             break;
 
@@ -36,10 +49,11 @@ export function checkFieldset(fieldsets, activeFieldset) {
             case 'einde':
                 if (new Date(input[i].value) == 'Invalid Date') {
                     input[i].classList.add('invalid');
+                    errMsg.innerText = 'Deze datum is niet geldig';
                     valid = false;
                 } else if (input[i].classList.contains('invalid')) {
                     input[i].classList.remove('invalid');
-                    // document.getElementById('error-name').innerHTML = '';
+                    errMsg.innerText = '';
                 }
             break;
 
@@ -54,10 +68,11 @@ export function checkFieldset(fieldsets, activeFieldset) {
 
                 if (radioCheck[input[i].getAttribute('name')] === false) {
                     parentContainer.classList.add('invalid');
+                    errMsg.innerText = 'Dit veld is verplicht';
                     valid = false;
                 } else if (parentContainer.classList.contains('invalid')) {
                     parentContainer.classList.remove('invalid');
-                    // document.getElementById('error-name').innerHTML = '';
+                    errMsg.innerText = '';
                     valid = true;
                 }
             break;
