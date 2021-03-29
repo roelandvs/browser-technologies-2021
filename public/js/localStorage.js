@@ -26,7 +26,7 @@ function lsTest(){
     } catch(e) {
         return false;
     }
-}
+};
 
 //if localStorage is available add inputs on focusout event
 if(lsTest() === true) {

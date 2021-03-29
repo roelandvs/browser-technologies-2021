@@ -1,4 +1,5 @@
 import { checkFieldset } from './checkFieldset.js';
+import { updateProgressBar } from './updateProgressBar.js';
 
 const nextButtons = document.querySelectorAll('.next-button');
 const backButtons = document.querySelectorAll('.back-button');
@@ -17,6 +18,7 @@ let activeFieldset = 0;
 
 function minActiveFieldset() {
     activeFieldset += -1;
+    updateProgressBar(activeFieldset);
     showFieldset();
 };
 
@@ -28,6 +30,7 @@ function addActiveFieldset() {
             activeFieldset = 3;
         };
 
+        updateProgressBar(activeFieldset);
         showFieldset();
     };
 };
@@ -35,6 +38,7 @@ function addActiveFieldset() {
 function showFieldset() {
     for (let i = 0; i < fieldsets.length; i++) {
         if (i === activeFieldset) {
+            //use toggle
             fieldsets[i].style.display = 'block';
         } else {
             fieldsets[i].style.display = 'none';
