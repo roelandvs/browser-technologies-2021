@@ -18,7 +18,7 @@ let activeFieldset = 0;
 
 function minActiveFieldset() {
     activeFieldset += -1;
-    updateProgressBar(activeFieldset);
+    updateProgressBar(activeFieldset, 'back');
     showFieldset();
 };
 
@@ -30,7 +30,7 @@ function addActiveFieldset() {
             activeFieldset = 3;
         };
 
-        updateProgressBar(activeFieldset);
+        updateProgressBar(activeFieldset, 'next');
         showFieldset();
     };
 };
