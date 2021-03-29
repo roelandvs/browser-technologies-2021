@@ -254,7 +254,7 @@ circle:nth-of-type(1) {
     stroke-dashoffset: var(--active-page);
 }
 
-.circle {
+.active {
     transform-origin: 50% 50%;
     transform-box: fill-box;
     animation: circleAnimation 0.5s 0.75s forwards;
@@ -271,4 +271,4 @@ circle:nth-of-type(1) {
         transform: scale(1);
         stroke: var(--main-color);
     }
-  }
+}

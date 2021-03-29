@@ -7,6 +7,7 @@ const backButtons = document.querySelectorAll(".back-button");
 const fieldsets = document.body.getElementsByTagName("fieldset");
 const form = document.querySelector("form");
 
+//remember on which field if LS
 export let activeFieldset = lsTest()
 	? localStorage.getItem(`${form.id}-activeFieldset`)
 		? +localStorage.getItem(`${form.id}-activeFieldset`)
@@ -22,6 +23,7 @@ export let activeFieldset = lsTest()
 	fieldsets[0].style.display = "block";
 
 	showFieldset();
+	updateProgressBar(activeFieldset, "refresh");
 })();
 
 function minActiveFieldset() {
