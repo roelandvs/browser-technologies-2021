@@ -1,3 +1,5 @@
+import { activeFieldset } from './splitForm.js'
+
 const form = document.querySelector('form');
 
 function addInputs() {
@@ -17,7 +19,7 @@ function addInputs() {
 };
 
 //test if localeStorage is available
-function lsTest(){
+export function lsTest(){
     const test = 'test';
     try {
         localStorage.setItem(test, test);
@@ -31,9 +33,10 @@ function lsTest(){
 //if localStorage is available add inputs on focusout event
 if(lsTest() === true) {
     form.addEventListener('focusout', function(event) {
-        if(event.target.type !== 'submit' && event.target.type !== 'button') {
+        if(event.target.type !== 'submit') {
             //adds course name to begin of input name in LS
             localStorage.setItem(`${form.id}-${event.target.name}`, event.target.value);
+            localStorage.setItem(`${form.id}-activeFieldset`, activeFieldset);
         }
     }, true);
     
