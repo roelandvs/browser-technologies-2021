@@ -1,6 +1,7 @@
 import { checkFieldset } from './checkFieldset.js';
 
 const nextButtons = document.querySelectorAll('.next-button');
+const backButtons = document.querySelectorAll('.back-button');
 const fieldsets = document.body.getElementsByTagName('fieldset');
 
 let activeFieldset = 0;
@@ -13,6 +14,11 @@ let activeFieldset = 0;
 
     fieldsets[0].style.display = 'block';
 })();
+
+function minActiveFieldset() {
+    activeFieldset += -1;
+    showFieldset();
+};
 
 function addActiveFieldset() {
     if (checkFieldset(fieldsets, activeFieldset) === true) {
@@ -38,4 +44,8 @@ function showFieldset() {
 
 for (let i = 0; i < nextButtons.length; i++) {
     nextButtons[i].addEventListener('click', addActiveFieldset);
+};
+
+for (let i = 0; i < backButtons.length; i++) {
+    backButtons[i].addEventListener('click', minActiveFieldset);
 };
