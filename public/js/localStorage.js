@@ -16,11 +16,29 @@ function addInputs() {
     });
 };
 
-form.addEventListener('focusout', function(event) {
-    if(event.target.type !== 'submit' && event.target.type !== 'button') {
-        //adds course name to begin of input name in LS
-        localStorage.setItem(`${form.id}-${event.target.name}`, event.target.value);
+//test if localeStorage is available
+function lsTest(){
+    const test = 'test';
+    try {
+        localStorage.setItem(test, test);
+        localStorage.removeItem(test);
+        return true;
+    } catch(e) {
+        return false;
     }
-}, true);
+}
 
-window.addEventListener('load', addInputs);
+//if localStorage is available add inputs on focusout event
+if(lsTest() === true) {
+    form.addEventListener('focusout', function(event) {
+        if(event.target.type !== 'submit' && event.target.type !== 'button') {
+            //adds course name to begin of input name in LS
+            localStorage.setItem(`${form.id}-${event.target.name}`, event.target.value);
+        }
+    }, true);
+    
+    window.addEventListener('load', addInputs);
+} else {
+    console.log('no local storage')
+};
+
