@@ -42,6 +42,7 @@ export function checkFieldset(fieldsets, activeFieldset) {
                     valid = false;
                 } else if (input[i].classList.contains('invalid')) {
                     input[i].classList.remove('invalid');
+                    errMsg.innerText = '';
                 }
             break;
 
