@@ -41,6 +41,12 @@ header,
     margin-bottom: 40px;
 }
 
+#no-header {
+    position: absolute;
+    opacity: 0;
+    user-select: none;
+}
+
 /* Fonts */
 h1,
 legend {
