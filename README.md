@@ -85,23 +85,66 @@ De Firefox browser heb ik gekozen als non chromium browser. Hier ga ik dus teste
 
 Aangezien Chrome het voorbeeld is zal ik alleen de punten behandelen waarin Firefox verschilt t.o.v Chrome.
 
-**De list input verschilt:**
-<img width="964" alt="Screenshot 2021-03-30 at 18 02 45" src="https://user-images.githubusercontent.com/59770136/113020007-7898fc00-9182-11eb-8f08-93b17ff42894.png">
-- Hij toont pas de docenten van het vak nadat je een letter van hun naam typt (vormt geen probleem)
-
-
-### Test zonder beperking
+### Test zonder beperking  
 De Javascript hoort deze functionaliteiten toe te voegen:
 - `LocalStorage toepassen die inputs automatisch invult`
 - `Formulier in stappen opdelen`
 - `Per stap de inputs controleren`
 - `Progressbar toevoegen die animeert`
 
+**De list input verschilt:**
+<img width="964" alt="Screenshot 2021-03-30 at 18 02 45" src="https://user-images.githubusercontent.com/59770136/113020007-7898fc00-9182-11eb-8f08-93b17ff42894.png">
+- Hij toont pas de docenten van het vak nadat je een letter van hun naam typt (vormt geen probleem)
+
+Voor de rest werkt alles op Firefox hetzelfde als op Chrome.
+
+### Test zonder JS
+Zonder JS (Met alleen CSS) hoort de browser dit te doen:
+- `Het formulier in stappen tonen, en na deze in te vullen pas de volgende te tonen`
+- `Compleet ingevulde formulieren opslaan`
+- `Geen next buttons tonen aangezien die voor JS zijn`
+
+Ik heb geen enkel verschil kunnen vinden tussen Firefox en Chrome. Alle bovengenoemde punten werken top!
+
+### Test met keyboard navigatie
+Als je alleen een toetsenbord gebruikt moeten er een aantal dingen werken:
+- `Het is duidelijk waar je bent`
+- `Alle inputs moeten werken`
+- `Alle navigatie/buttons moet werken`
+
+**Probleem gevonden:**
+<img width="964" alt="Screenshot 2021-03-30 at 18 30 27" src="https://user-images.githubusercontent.com/59770136/113023626-1fcb6280-9186-11eb-963c-9db98adcfffa.png">
+- Je kunt niet bij deze navigatie komen
+
+Ik heb het opgezocht en dit komt doordat Firefox de instellingen van je OS overneemt. Je moet dus de instellingen van Firefox of je MacBook aanpassen. Er is niets tegen te doen binnen HTML/CSS/JS. [link](https://stackoverflow.com/questions/11704828/how-to-allow-keyboard-focus-of-links-in-firefox).
 
 
+## Chrome (Mobile: OnePlus):
+Ik test de Chrome browser op mijn OnePlus7T Pro. 
 
+### Test zonder beperking  
+De Javascript hoort deze functionaliteiten toe te voegen:
+- `LocalStorage toepassen die inputs automatisch invult`
+- `Formulier in stappen opdelen`
+- `Per stap de inputs controleren`
+- `Progressbar toevoegen die animeert`
 
+Alles op de telefoon lijkt helemaal goed te werken.
 
+**Er is wel 1 verschil:**  
+<img width="300" alt="Screenshot 2021-03-30 at 19 03 16" src="https://user-images.githubusercontent.com/59770136/113027631-9bc7a980-918a-11eb-8881-4e62a60583df.png">
+
+Ik heb dit opgelost door voor `input[type="date"]` de display naar `inline-flex` te veranderen.
+
+### Test zonder JS
+Zonder JS (Met alleen CSS) hoort de browser dit te doen:
+- `Het formulier in stappen tonen, en na deze in te vullen pas de volgende te tonen`
+- `Compleet ingevulde formulieren opslaan`
+- `Geen next buttons tonen aangezien die voor JS zijn`
+
+Op telefoon Chrome werkt dit exact hetzelfde als op de desktop.
+
+## Samsung browser ():
 
 
 <br/>
