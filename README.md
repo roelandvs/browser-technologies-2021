@@ -1,5 +1,110 @@
 # Eindopdracht
-Enquete over de minor Web Development.
+Voor de eindopdracht moet de applicatie op meerdere browsers getest worden. Ik test mijn applicatie op de volgende browsers:
+
+**Desktop:**
+- `Chrome`
+- `Firefox`
+
+**Mobile:**
+- `Samsung browser`
+- `Chrome`
+
+Per browser doe ik 3 tests:
+- `Test zonder berperkingen (perfecte gebruiker)`
+- `Test zonder JS`
+- `Test via alleen keyboard`
+
+<br/>
+
+## Chrome (Desktop):
+Op Chrome werkt de website perfect. Dit is ook logisch aangezien ik Chrome gebruik tijdens het developen, dus als ik een fout tegenkwam werd dit direct aangepast. 
+
+Deze test kan daardoor goed dienen als een voobeeld om de andere browsers mee te kunnen vergelijken.
+
+### Test zonder beperking
+De Javascript hoort deze functionaliteiten toe te voegen:
+- `LocalStorage toepassen die inputs automatisch invult`
+- `Formulier in stappen opdelen`
+- `Per stap de inputs controleren`
+- `Progressbar toevoegen die animeert`  
+
+
+**Na te refreshen:**
+<img width="982" alt="Screenshot 2021-03-30 at 16 42 02" src="https://user-images.githubusercontent.com/59770136/113007874-dfb0b380-9176-11eb-8118-8dfd8e24cf46.png">
+- Inputs ingevuld
+- Toont nog steeds stap Datums (2/4) (Hij is niet terug naar stap 1 gegaan)
+
+
+**Na incorrecte input:**
+<img width="982" alt="Screenshot 2021-03-30 at 16 44 03" src="https://user-images.githubusercontent.com/59770136/113008263-2ef6e400-9177-11eb-88f6-d6e40b662b31.png">
+- Toont welk veld niet klopt
+- Wat er fout is
+
+### Test zonder JS  
+Zonder JS (Met alleen CSS) hoort de browser dit te doen:
+- `Het formulier in stappen tonen, en na deze in te vullen pas de volgende te tonen`
+- `Compleet ingevulde formulieren opslaan`
+- `Geen next buttons tonen aangezien die voor JS zijn`
+
+**Na stap 1 inguld te hebben:**
+<img width="982" alt="Screenshot 2021-03-30 at 16 59 53" src="https://user-images.githubusercontent.com/59770136/113010749-61a1dc00-9179-11eb-9505-e521ff2c5ca4.png">
+- Toont automatisch volgende stap (stap 2)
+- Toont geen next button (is alleen voor JS)
+
+**Na 1 formulier te hebben ingevuld:**
+<img width="982" alt="Screenshot 2021-03-30 at 17 01 40" src="https://user-images.githubusercontent.com/59770136/113011072-b04f7600-9179-11eb-99b0-beb8c447f920.png">
+- Slaat formulier op, ook als je refresht
+
+### Test met keyboard navigatie
+Als je alleen een toetsenbord gebruikt moeten er een aantal dingen werken:
+- `Het is duidelijk waar je bent`
+- `Alle inputs moeten werken`
+- `Alle navigatie/buttons moet werken`
+
+**Midden in een formulier:**
+<img width="982" alt="Screenshot 2021-03-30 at 17 21 46" src="https://user-images.githubusercontent.com/59770136/113013994-80ee3880-917c-11eb-8727-3c65f5b9679f.png">
+- Het is duidelijk waar je bent
+- Alle inputs werken
+
+**Op navigatie:**
+<img width="982" alt="Screenshot 2021-03-30 at 17 24 07" src="https://user-images.githubusercontent.com/59770136/113015899-41c0e700-917e-11eb-9ac4-8e3c50752cac.png">
+- Duidelijk waar je bent
+- Navigatie werkt
+
+**Toch een fout gevonden:**
+<img width="982" alt="Screenshot 2021-03-30 at 17 35 57" src="https://user-images.githubusercontent.com/59770136/113016077-6c12a480-917e-11eb-935a-ad820132a7d6.png">
+- Het is niet duidelijk op welke radio button de `:focus` ligt
+
+Ik heb dit verbeterd door de `:focus` kleuren anders te maken t.o.v de `:checked` kleur:  
+<img width="63" alt="Screenshot 2021-03-30 at 17 39 42" src="https://user-images.githubusercontent.com/59770136/113016609-f2c78180-917e-11eb-8fd7-a420d64ded7d.png">
+
+<br/>
+
+## Firefox (Desktop):
+De Firefox browser heb ik gekozen als non chromium browser. Hier ga ik dus testen of Firefox net zo goed mijn website runt als dat Chrome dat doet.
+
+Aangezien Chrome het voorbeeld is zal ik alleen de punten behandelen waarin Firefox verschilt t.o.v Chrome.
+
+**De list input verschilt:**
+<img width="964" alt="Screenshot 2021-03-30 at 18 02 45" src="https://user-images.githubusercontent.com/59770136/113020007-7898fc00-9182-11eb-8f08-93b17ff42894.png">
+- Hij toont pas de docenten van het vak nadat je een letter van hun naam typt (vormt geen probleem)
+
+
+### Test zonder beperking
+De Javascript hoort deze functionaliteiten toe te voegen:
+- `LocalStorage toepassen die inputs automatisch invult`
+- `Formulier in stappen opdelen`
+- `Per stap de inputs controleren`
+- `Progressbar toevoegen die animeert`
+
+
+
+
+
+
+
+
+<br/>
 
 ## Schetsen / Wireflow
 ![WhatsApp Image 2021-03-17 at 15 53 10](https://user-images.githubusercontent.com/59770136/111488151-48406f00-8739-11eb-9c32-ed4147661dea.jpeg)
