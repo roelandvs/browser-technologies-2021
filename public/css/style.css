@@ -100,7 +100,7 @@ input[list],
 textarea {
     display: block;
     border-radius: 0px;
-    height: 35px;
+    /* height: 35px;  */
     background-color: var(--input-color);
     border: 1px solid var(--input-border);
     width: 100%;
