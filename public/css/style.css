@@ -298,3 +298,8 @@ circle:nth-of-type(1) {
         stroke: var(--main-color);
     }
 }
+
+/* JS classes */
+#visible {
+    display: block;
+}

@@ -20,7 +20,8 @@ export let activeFieldset = lsTest()
 	root.style.setProperty("--display-fieldset", "none");
 	root.style.setProperty("--display-buttons", "block");
 
-	fieldsets[0].style.display = "block";
+	fieldsets[0].id = 'visible';
+
 
 	showFieldset();
 	updateProgressBar(activeFieldset, "refresh");
@@ -48,10 +49,9 @@ function addActiveFieldset() {
 function showFieldset() {
 	for (let i = 0; i < fieldsets.length; i++) {
 		if (i === activeFieldset) {
-			//use toggle
-			fieldsets[i].style.display = "block";
+			fieldsets[i].id = 'visible';
 		} else {
-			fieldsets[i].style.display = "none";
+			fieldsets[i].id = '';
 		}
 	}
 }
