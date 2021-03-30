@@ -33,7 +33,7 @@ export function lsTest(){
 //if localStorage is available add inputs on focusout event
 if(lsTest() === true) {
     form.addEventListener('focusout', function(event) {
-        if(event.target.type !== 'submit') {
+        if(event.target.type !== 'submit' && event.target.type !== 'button') {
             //adds course name to begin of input name in LS
             localStorage.setItem(`${form.id}-${event.target.name}`, event.target.value);
             localStorage.setItem(`${form.id}-activeFieldset`, activeFieldset);

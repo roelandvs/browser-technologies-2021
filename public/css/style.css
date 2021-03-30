@@ -166,11 +166,20 @@ input[type="radio"]:checked + label {
 }
 
 .back-button {
+    border-radius: 100%;
     width: 40px;
+    height: 40px;
+    border: 0px;
+    padding: 0;
+}
+
+.back-button img {
+    width: 40px;
+    height: 40px;
 }
 
 .next-button {
-    padding-top: 8px;
+    /* padding-top: 8px; */
 }
 
 .radio-container {
