@@ -30,6 +30,11 @@ body {
     padding: var(--padding-big);
 }
 
+/* main {
+    max-width: 400px;
+    margin: 0 auto;
+} */
+
 header,
 .legend-subtitle {
     margin-bottom: 40px;
@@ -257,7 +262,10 @@ circle:nth-of-type(1) {
 .active {
     transform-origin: 50% 50%;
     transform-box: fill-box;
-    animation: circleAnimation 0.5s 0.75s forwards;
+    animation: circleAnimation 0.5s 0.70s forwards;
+}
+.refreshed {
+    stroke: var(--main-color);
 }
 
 @keyframes circleAnimation {

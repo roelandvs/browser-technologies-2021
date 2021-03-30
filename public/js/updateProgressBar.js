@@ -7,14 +7,16 @@ export function updateProgressBar(activeFieldset, direction) {
         for (let i = 0; i < circles.length; i++) {
             if (i > activeFieldset) {
                 circles[i].classList.remove('active');
+                circles[i].classList.remove('refreshed');
             };
         };
     } else if (direction === 'next') {
         circles[activeFieldset].classList.add('active');
+        circles[activeFieldset].classList.remove('refreshed');
     } else {
         for (let i = 0; i < circles.length; i++) {
             if (i <= activeFieldset) {
-                circles[i].classList.add('active');
+                circles[i].classList.add('refreshed');
             };
         };
     };
