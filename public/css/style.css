@@ -67,7 +67,7 @@ legend ~ p {
 input + p,
 .radio-container + p {
     margin: 1px 0 8px;
-    height: 1em;
+    height: 16px;
     font-size: 0.9em;
     color: var(--err-border-color);
 }
