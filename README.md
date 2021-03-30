@@ -144,8 +144,25 @@ Zonder JS (Met alleen CSS) hoort de browser dit te doen:
 
 Op telefoon Chrome werkt dit exact hetzelfde als op de desktop.
 
-## Samsung browser ():
+## Samsung browser (SAmsung Galaxy A8):
+Deze test heb ik gedaan via Browserstack. Ik weet dus niet of deze test helemaal accuraat zullen zijn. Op Browserstack heb ik gekozen voor de Galaxy A8.
 
+### Test zonder beperking  
+De Javascript hoort deze functionaliteiten toe te voegen:
+- `LocalStorage toepassen die inputs automatisch invult`
+- `Formulier in stappen opdelen`
+- `Per stap de inputs controleren`
+- `Progressbar toevoegen die animeert`
+
+Alles op de telefoon werkt helemaal goed. Ik heb geen verschil tussen Chrome en de Samsung browser kunnen vinden.
+
+### Test zonder Js  
+Zonder JS (Met alleen CSS) hoort de browser dit te doen:
+- `Het formulier in stappen tonen, en na deze in te vullen pas de volgende te tonen`
+- `Compleet ingevulde formulieren opslaan`
+- `Geen next buttons tonen aangezien die voor JS zijn`
+
+Op de Samsung browser werkt hij net als op de mobile Chome browser goed.
 
 <br/>
 
