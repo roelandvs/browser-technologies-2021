@@ -73,8 +73,11 @@ export function checkFieldset(fieldsets, activeFieldset) {
                 } else if (parentContainer.classList.contains('invalid')) {
                     parentContainer.classList.remove('invalid');
                     errMsg.innerText = '';
+                };
+
+                if(Object.values(radioCheck).every(Boolean)) {
                     valid = true;
-                }
+                };
             break;
         };
     };

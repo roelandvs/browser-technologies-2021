@@ -29,7 +29,7 @@ function getCourseData(course) {
             full_name: 'Browser Technologies',
             teachers: [
                 'Koop Renders',
-                'Peter Paul Koch'
+                'Peter Paul Kooch'
             ]
         },
         {
