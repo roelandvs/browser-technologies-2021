@@ -1,9 +1,8 @@
 import { checkFieldset } from "./checkFieldset.js";
 import { updateProgressBar } from "./updateProgressBar.js";
+import { addButtons } from "./addButtons.js";
 import { lsTest } from "./localStorage.js";
 
-const nextButtons = document.querySelectorAll(".next-button");
-const backButtons = document.querySelectorAll(".back-button");
 const fieldsets = document.body.getElementsByTagName("fieldset");
 const form = document.querySelector("form");
 
@@ -15,25 +14,27 @@ export let activeFieldset = lsTest()
 	: 0;
 
 //self invoking expression
-(function () {
-	const root = document.documentElement;
-	root.style.setProperty("--display-fieldset", "none");
-	root.style.setProperty("--display-buttons", "block");
+if (form.id !== 'login') {
+	(function () {
+		const root = document.documentElement;
+		root.style.setProperty("--display-fieldset", "none");
+		root.style.setProperty("--display-buttons", "block");
 
-	fieldsets[0].id = 'visible';
+		fieldsets[0].id = 'visible';
 
+		addButtons();
+		showFieldset();
+		updateProgressBar(activeFieldset, "refresh");
+	})();
+};
 
-	showFieldset();
-	updateProgressBar(activeFieldset, "refresh");
-})();
-
-function minActiveFieldset() {
+export function minActiveFieldset() {
 	activeFieldset += -1;
 	updateProgressBar(activeFieldset, "back");
 	showFieldset();
 }
 
-function addActiveFieldset() {
+export function addActiveFieldset() {
 	if (checkFieldset(fieldsets, activeFieldset) === true) {
 		activeFieldset += 1;
 
@@ -54,12 +55,4 @@ function showFieldset() {
 			fieldsets[i].id = '';
 		}
 	}
-}
-
-for (let i = 0; i < nextButtons.length; i++) {
-	nextButtons[i].addEventListener("click", addActiveFieldset);
-}
-
-for (let i = 0; i < backButtons.length; i++) {
-	backButtons[i].addEventListener("click", minActiveFieldset);
 }
