@@ -1,29 +1,40 @@
 # Progressive Enhancement
 ## Functional
 **Semantic HTML**  
-De semantische opbouw is de kern van de functional laag. Dit zorgt er bijvoorbeeld voor dat mensen die navigeren via het toetsenbord het formulier kunnen afronden. Het maakt hierbij niet uit of ze wel of geen CSS en JS hebben.
+De semantische opbouw is de kern van de functional laag. Dit zorgt er bijvoorbeeld voor dat mensen die navigeren via het toetsenbord het formulier kunnen afronden. Ik heb hiervoor bijvoorbeeld divs die ik gebruikte voor de navigatie vervangen voor buttons, zodat dit toegankelijk werd met toetsenbord .Het maakt hierbij niet uit of ze wel of geen CSS en JS hebben. Verder zorgt de HTML er ook voor dat de input deels wordt gecontrolleerd. Ik gebruik alleen required bij sommige velden en bij sommige niet, maar dit zorgt wel voor een controle in het formulier. Ik heb hiervoor ook een semantic check gedaan op elke pagina (staat ook in de README).
 
 **Feauture Detection**  
 De feauture detection checkt of er wel of geen Local Storage beschikbaar is voor gebruik. Deze feature detection zorgt er voor dat de applicatie niet stopt met werken als er geen Local Storage is en als hij er wel is verbeterd deze de ervaring.
 
-**Core functionaliteit**  
-Samengevat is de core functionaliteit: `Het formulier invullen en afronden` in elke staat mogelijk zowel door de 
-
 ## Reliable
-**Form onthoud**  
-**Form checkt**  
+**Server onthoud**  
+Als je een formulier helemaal ingevuld hebt wordt de data naar de server gestuurd. Dit voegt toe aan de reliable laag aangezien deze data opgelslagen wordt. Als je dus terug komt om later de formulieren in te vullen hoef je niet helemaal opnieuw te beginnen.
+
 **User in control**  
+Het formulier wordt met zowel CSS als JS in stappen opgedeeld. Daarom heb ik bij elke stap in de subtitel staan op welke stap de user zich bevind door: (1/4) toe te voegen. Met JS wordt dit ook nog verbeterd met een progress bar, en navigatie knoppen.
+
 **Contrast**  
+Bij de buttons heb ik er voor gezorgt dat deze voldoen aan het contrast dat Lighthouse goedkeurt, zodat deze voor mensen met slechter het ook nog kunnen lezen.
+
 **Toetsenbord :focus**  
+Voor gebruikers zonder muis heb ik een focus style toegevoegd op de radio buttons aangezen de :focus en de :checked dezelfde style hadden. Dit zorgde er voor dat als je ingevulde radio buttons wilde aanpassen dat je niet kon zien op welkde radio button je focusde. De aangepaste style loste dit op. Dit wordt bij de browser test nog verder uitgelegd.
 
 ## Pleasurable
 **Progress bar**  
+De progress bar zorgt voor een fijne ervaring. Deze animeert namelijk op een vrolijke manier elke keer als je een fieldset hebt ingevuld en naar de volgende stap gaat. Persoonlijk vind ik deze progress bar super fijn en pleasurable.
+
 **Groene vinkjes**  
+Nadat je een formulier compleet hebt ingevuld komt er een groen vinkje achter het vak te staan. Dit vinkje voelt erg prettig aan. Dit komt denk ik vooral dat dit het enige element is dat valt buiten het algene kleurenschema van de site. Hierdoor valt hij extra op en voelt het goed om een formulier in te vullen.
+
 **LocalStorge**  
+De localstorge zorgt er voor dat je na een input hebt ingevuld dat deze opgeslagen wordt. Als een gebruiker dus de site midden in een formulier verlaat kan hij altijd terug komen zonder dat ze opnieuw hoeven te beginnen. Super chil.
+
 **Error messages**  
+Als de gebruiker JS heeft wordt er per fieldset een controle uitgevoerd voor de inputs. Deze geven aan als er een input niet correct is. Dit is fijn aangezien je een custom error message krijgt die aangeeft wat er fout is. Verder is dit ook fijn dat het per stap krijgt, anders gebeurd dit aan het einde van het formulier. Dus op het moment dat je denkt klaar denkt te zijn met het formulier moet je dan toch nog dingen aanpassen.
+
+<br/>
 
 # Browsers testen
-
 Voor de eindopdracht moet de applicatie op meerdere browsers getest worden. Ik test mijn applicatie op de volgende browsers:
 
 **Desktop:**
@@ -193,9 +204,6 @@ Op de Samsung browser werkt hij net als op de mobile Chome browser goed.
 <br/>
 
 
-# Semantic check
-
-
 # Schetsen / Wireflow
 ![WhatsApp Image 2021-03-17 at 15 53 10](https://user-images.githubusercontent.com/59770136/111488151-48406f00-8739-11eb-9c32-ed4147661dea.jpeg)
 ![WhatsApp Image 2021-03-17 at 15 53 10 (1)](https://user-images.githubusercontent.com/59770136/111488157-4a0a3280-8739-11eb-8feb-61e430446671.jpeg)
@@ -203,8 +211,12 @@ Op de Samsung browser werkt hij net als op de mobile Chome browser goed.
 
 <br/>
 
+# Semantic check
+Ik heb op elke pagina een sematic check gedaan om te checken of ik errors waren.
 
-
+<img width="1119" alt="Screenshot 2021-03-30 at 12 28 02" src="https://user-images.githubusercontent.com/59770136/113307242-3946e880-9305-11eb-9bd0-3576e395a0b3.png">
+<img width="1119" alt="Screenshot 2021-03-30 at 12 27 42" src="https://user-images.githubusercontent.com/59770136/113307246-3b10ac00-9305-11eb-9ef5-3550d8258cc9.png">
+<img width="1119" alt="Screenshot 2021-03-30 at 12 27 33" src="https://user-images.githubusercontent.com/59770136/113307248-3ba94280-9305-11eb-8724-e23aad3b922f.png">
 
 # Opdracht 2: Breek het web
 
