@@ -1,3 +1,16 @@
+
+# Browser Technologies
+![Screenshot 2021-04-01 at 16 21 48](https://user-images.githubusercontent.com/59770136/113308360-60ea8080-9306-11eb-946f-89213b05a0d0.png)
+
+In heb tijdens dit vak gewerkt aan de enquête over de minor. In deze Readme is er veel informatie te vinden over deze enquête. 
+
+**De Readme is opgedeeld in meerdere delen:**
+- [Progressive Enhancement](#progressive-enhancement)
+- [Browser Tests](#browser-tests)
+- [Schetsen / Wireflow](#schetsen-/-wireflow)
+- [Semantic Check](#semantic-check)
+- [Opdracht 2: Breek het web](#opdracht-2:-breek-het-web)
+
 # Progressive Enhancement
 ## Functional
 **Semantic HTML**  
@@ -34,7 +47,7 @@ Als de gebruiker JS heeft wordt er per fieldset een controle uitgevoerd voor de 
 
 <br/>
 
-# Browsers testen
+# Browser Tests
 Voor de eindopdracht moet de applicatie op meerdere browsers getest worden. Ik test mijn applicatie op de volgende browsers:
 
 **Desktop:**
@@ -211,7 +224,7 @@ Op de Samsung browser werkt hij net als op de mobile Chome browser goed.
 
 <br/>
 
-# Semantic check
+# Semantic Check
 Ik heb op elke pagina een sematic check gedaan om te checken of ik errors waren.
 
 <img width="1119" alt="Screenshot 2021-03-30 at 12 28 02" src="https://user-images.githubusercontent.com/59770136/113307242-3946e880-9305-11eb-9bd0-3576e395a0b3.png">
