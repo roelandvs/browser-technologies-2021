@@ -1,4 +1,29 @@
-# Eindopdracht
+# Progressive Enhancement
+## Functional
+**Semantic HTML**  
+De semantische opbouw is de kern van de functional laag. Dit zorgt er bijvoorbeeld voor dat mensen die navigeren via het toetsenbord het formulier kunnen afronden. Het maakt hierbij niet uit of ze wel of geen CSS en JS hebben.
+
+**Feauture Detection**  
+De feauture detection checkt of er wel of geen Local Storage beschikbaar is voor gebruik. Deze feature detection zorgt er voor dat de applicatie niet stopt met werken als er geen Local Storage is en als hij er wel is verbeterd deze de ervaring.
+
+**Core functionaliteit**  
+Samengevat is de core functionaliteit: `Het formulier invullen en afronden` in elke staat mogelijk zowel door de 
+
+## Reliable
+**Form onthoud**  
+**Form checkt**  
+**User in control**  
+**Contrast**  
+**Toetsenbord :focus**  
+
+## Pleasurable
+**Progress bar**  
+**Groene vinkjes**  
+**LocalStorge**  
+**Error messages**  
+
+# Browsers testen
+
 Voor de eindopdracht moet de applicatie op meerdere browsers getest worden. Ik test mijn applicatie op de volgende browsers:
 
 **Desktop:**
@@ -16,12 +41,13 @@ Per browser doe ik 3 tests:
 
 <br/>
 
+
 ## Chrome (Desktop):
 Op Chrome werkt de website perfect. Dit is ook logisch aangezien ik Chrome gebruik tijdens het developen, dus als ik een fout tegenkwam werd dit direct aangepast. 
 
 Deze test kan daardoor goed dienen als een voobeeld om de andere browsers mee te kunnen vergelijken.
 
-### Test zonder beperking
+### Test zonder beperking (Chrome)
 De Javascript hoort deze functionaliteiten toe te voegen:
 - `LocalStorage toepassen die inputs automatisch invult`
 - `Formulier in stappen opdelen`
@@ -40,7 +66,7 @@ De Javascript hoort deze functionaliteiten toe te voegen:
 - Toont welk veld niet klopt
 - Wat er fout is
 
-### Test zonder JS  
+### Test zonder JS (Chrome)
 Zonder JS (Met alleen CSS) hoort de browser dit te doen:
 - `Het formulier in stappen tonen, en na deze in te vullen pas de volgende te tonen`
 - `Compleet ingevulde formulieren opslaan`
@@ -55,7 +81,7 @@ Zonder JS (Met alleen CSS) hoort de browser dit te doen:
 <img width="982" alt="Screenshot 2021-03-30 at 17 01 40" src="https://user-images.githubusercontent.com/59770136/113011072-b04f7600-9179-11eb-99b0-beb8c447f920.png">
 - Slaat formulier op, ook als je refresht
 
-### Test met keyboard navigatie
+### Test met keyboard navigatie (Chrome)
 Als je alleen een toetsenbord gebruikt moeten er een aantal dingen werken:
 - `Het is duidelijk waar je bent`
 - `Alle inputs moeten werken`
@@ -85,7 +111,7 @@ De Firefox browser heb ik gekozen als non chromium browser. Hier ga ik dus teste
 
 Aangezien Chrome het voorbeeld is zal ik alleen de punten behandelen waarin Firefox verschilt t.o.v Chrome.
 
-### Test zonder beperking  
+### Test zonder beperking (Firefox)
 De Javascript hoort deze functionaliteiten toe te voegen:
 - `LocalStorage toepassen die inputs automatisch invult`
 - `Formulier in stappen opdelen`
@@ -98,7 +124,7 @@ De Javascript hoort deze functionaliteiten toe te voegen:
 
 Voor de rest werkt alles op Firefox hetzelfde als op Chrome.
 
-### Test zonder JS
+### Test zonder JS (Firefox) 
 Zonder JS (Met alleen CSS) hoort de browser dit te doen:
 - `Het formulier in stappen tonen, en na deze in te vullen pas de volgende te tonen`
 - `Compleet ingevulde formulieren opslaan`
@@ -106,7 +132,7 @@ Zonder JS (Met alleen CSS) hoort de browser dit te doen:
 
 Ik heb geen enkel verschil kunnen vinden tussen Firefox en Chrome. Alle bovengenoemde punten werken top!
 
-### Test met keyboard navigatie
+### Test met keyboard navigatie (Firefox)
 Als je alleen een toetsenbord gebruikt moeten er een aantal dingen werken:
 - `Het is duidelijk waar je bent`
 - `Alle inputs moeten werken`
@@ -122,7 +148,7 @@ Ik heb het opgezocht en dit komt doordat Firefox de instellingen van je OS overn
 ## Chrome (Mobile: OnePlus):
 Ik test de Chrome browser op mijn OnePlus7T Pro. 
 
-### Test zonder beperking  
+### Test zonder beperking  (Chrome)
 De Javascript hoort deze functionaliteiten toe te voegen:
 - `LocalStorage toepassen die inputs automatisch invult`
 - `Formulier in stappen opdelen`
@@ -136,7 +162,7 @@ Alles op de telefoon lijkt helemaal goed te werken.
 
 Ik heb dit opgelost door voor `input[type="date"]` de display naar `inline-flex` te veranderen.
 
-### Test zonder JS
+### Test zonder JS (Chrome)
 Zonder JS (Met alleen CSS) hoort de browser dit te doen:
 - `Het formulier in stappen tonen, en na deze in te vullen pas de volgende te tonen`
 - `Compleet ingevulde formulieren opslaan`
@@ -144,10 +170,10 @@ Zonder JS (Met alleen CSS) hoort de browser dit te doen:
 
 Op telefoon Chrome werkt dit exact hetzelfde als op de desktop.
 
-## Samsung browser (SAmsung Galaxy A8):
+## Samsung browser (Samsung Galaxy A8):
 Deze test heb ik gedaan via Browserstack. Ik weet dus niet of deze test helemaal accuraat zullen zijn. Op Browserstack heb ik gekozen voor de Galaxy A8.
 
-### Test zonder beperking  
+### Test zonder beperking  (Samsung)
 De Javascript hoort deze functionaliteiten toe te voegen:
 - `LocalStorage toepassen die inputs automatisch invult`
 - `Formulier in stappen opdelen`
@@ -156,7 +182,7 @@ De Javascript hoort deze functionaliteiten toe te voegen:
 
 Alles op de telefoon werkt helemaal goed. Ik heb geen verschil tussen Chrome en de Samsung browser kunnen vinden.
 
-### Test zonder Js  
+### Test zonder JS (Samsung)
 Zonder JS (Met alleen CSS) hoort de browser dit te doen:
 - `Het formulier in stappen tonen, en na deze in te vullen pas de volgende te tonen`
 - `Compleet ingevulde formulieren opslaan`
@@ -166,13 +192,14 @@ Op de Samsung browser werkt hij net als op de mobile Chome browser goed.
 
 <br/>
 
-## Schetsen / Wireflow
+
+# Semantic check
+
+
+# Schetsen / Wireflow
 ![WhatsApp Image 2021-03-17 at 15 53 10](https://user-images.githubusercontent.com/59770136/111488151-48406f00-8739-11eb-9c32-ed4147661dea.jpeg)
 ![WhatsApp Image 2021-03-17 at 15 53 10 (1)](https://user-images.githubusercontent.com/59770136/111488157-4a0a3280-8739-11eb-8feb-61e430446671.jpeg)
 ![WhatsApp Image 2021-03-17 at 15 53 10 (2)](https://user-images.githubusercontent.com/59770136/111488164-4b3b5f80-8739-11eb-92c5-60fe12e89bb2.jpeg)
-
-## Progressive Enhacement
-Dingen
 
 <br/>
 
