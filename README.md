@@ -1,15 +1,18 @@
 
 # Browser Technologies
 ![Screenshot 2021-04-01 at 16 21 48](https://user-images.githubusercontent.com/59770136/113308360-60ea8080-9306-11eb-946f-89213b05a0d0.png)
+[Link naar site](https://minor-review-form.herokuapp.com/)
 
-In heb tijdens dit vak gewerkt aan de enquête over de minor. In deze Readme is er veel informatie te vinden over deze enquête. 
+In heb tijdens dit vak gewerkt aan de enquête over de minor.
 
 **De Readme is opgedeeld in meerdere delen:**
 - [Progressive Enhancement](#progressive-enhancement)
 - [Browser Tests](#browser-tests)
 - [Schetsen / Wireflow](#schetsen-/-wireflow)
 - [Semantic Check](#semantic-check)
-- [Opdracht 2: Breek het web](#opdracht-2:-breek-het-web)
+- [Opdracht 2: Breek het web](#opdracht-2:-breek-het-web)  
+
+<br/>
 
 # Progressive Enhancement
 ## Functional
