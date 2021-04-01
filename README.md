@@ -10,7 +10,7 @@ In heb tijdens dit vak gewerkt aan de enquête over de minor.
 - [Browser Tests](#browser-tests)
 - [Schetsen / Wireflow](#schetsen-/-wireflow)
 - [Semantic Check](#semantic-check)
-- [Opdracht 2: Breek het web](#opdracht-2:-breek-het-web)  
+- [Opdracht 2: Breek het web](#opdracht-2-breek-het-web)  
 
 <br/>
 
